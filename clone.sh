@@ -14,7 +14,7 @@ read -p "VMID for Clone? " clone_id
 read -p "VM Name? " clone_name
 read -p "What Storage? sata, nvme) " clone_storage
 
-# #qm clone $template_id $clone_id --name $clone_name --full --storage $clone_storage
+qm clone $template_id $clone_id --name $clone_name --full --storage $clone_storage
 
 read -p "DHCP? [yn] " answer
 if [ "$answer" == "y" ];
