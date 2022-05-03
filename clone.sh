@@ -12,7 +12,7 @@ echo
 read -p "Template ID to clone? " template_id
 read -p "VMID for Clone? " clone_id
 read -p "VM Name? " clone_name
-read -p "What Storage? sata, nvme) " clone_storage
+read -p "What Storage? sata, nvme, sixty) " clone_storage
 
 qm clone $template_id $clone_id --name $clone_name --full --storage $clone_storage
 
